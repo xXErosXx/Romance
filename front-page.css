@@ -5,10 +5,12 @@
   --white: #fff;
 }
 
+/* Global Styles */
 html, body {
   box-sizing: border-box;
 }
 
+/* Header Section */
 .header {
   padding: 80px;
   text-align: center;
@@ -20,6 +22,7 @@ html, body {
   font-size: 40px;
 }
 
+/* Navbar Styles */
 .navbar {
   overflow: hidden;
   background-color: var(--secondary-color);
@@ -43,14 +46,14 @@ html, body {
   color: black;
 }
 
-/* Tabs as a navigation bar */
+/* Tabs as a Navigation Bar */
 .tabs {
   overflow: hidden;
-  background-color: #333; /* Dark background color */
+  background-color: var(--secondary-color); /* Dark background */
   display: flex;
 }
 
-/* Tab buttons */
+/* Tab Buttons */
 .tablinks {
   flex: 1; /* Equal width for all tabs */
   background-color: inherit;
@@ -58,23 +61,23 @@ html, body {
   outline: none;
   cursor: pointer;
   padding: 14px 20px;
-  color: white;
+  color: var(--white);
   text-align: center;
 }
 
-/* Active tab button */
+/* Active Tab Button */
 .tablinks.active {
-  background-color: #1abc9c; /* Highlight active tab */
+  background-color: var(--primary-color); /* Highlight active tab */
 }
 
-/* Tab content sections */
+/* Tab Content Sections */
 .tabcontent {
   display: none;
   padding: 20px;
   border-top: 1px solid #ccc;
 }
 
-
+/* Row Layout */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -92,6 +95,14 @@ html, body {
   padding: 20px;
 }
 
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--light-grey);
+}
+
+/* Responsive Design */
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
