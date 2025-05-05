@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  <head>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-  <div class="header">
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .header {
+      text-align: center;
+    }
+    .row {
+      display: flex;
+    }
+    .side {
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    .main {
+      flex: 70%;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
   <h1>My Website</h1>
   <p>A website created by me.</p>
 </div>
-</style>
-<body>
-
-<h1>My Website</h1>
-<p>A website created by me.</p>
-
-</body>
-</html>
 
 <div class="row">
-  <div class="side">...</div>
-  <div class="main">...</div>
+  <div class="side">
+    <p>Side content goes here...</p>
+  </div>
+  <div class="main">
+    <p>Main content goes here...</p>
+  </div>
 </div>
 
 <div class="footer">
   <h2>Footer</h2>
 </div>
 
+</body>
+</html>
