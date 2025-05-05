@@ -43,6 +43,38 @@ html, body {
   color: black;
 }
 
+/* Tabs as a navigation bar */
+.tabs {
+  overflow: hidden;
+  background-color: #333; /* Dark background color */
+  display: flex;
+}
+
+/* Tab buttons */
+.tablinks {
+  flex: 1; /* Equal width for all tabs */
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Active tab button */
+.tablinks.active {
+  background-color: #1abc9c; /* Highlight active tab */
+}
+
+/* Tab content sections */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
